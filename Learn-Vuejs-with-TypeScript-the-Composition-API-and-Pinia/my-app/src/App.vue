@@ -95,7 +95,14 @@ nav a:first-of-type {
 <template>
 <div class="section">
     <div class="container">
-        <Timeline/>
+        <Suspense>
+            <template #default>
+                <Timeline/>
+            </template>
+            <template #fallback>
+                <progress class="progress is-primary is-small" />
+            </template>
+        </Suspense>
     </div>
 </div>
     
