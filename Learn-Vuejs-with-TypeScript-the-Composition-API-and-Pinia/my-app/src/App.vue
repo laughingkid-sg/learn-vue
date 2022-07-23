@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from "vue-router";
-import HelloWorld from "./components/HelloWorld.vue";
+import Timeline from "./components/Timeline.vue"
 </script>
-
+<!-- 
 <template>
   <header>
     <img
@@ -88,4 +88,18 @@ nav a:first-of-type {
     margin-top: 1rem;
   }
 }
+</style> -->
+
+
+
+<template>
+<div class="section">
+    <div class="container">
+        <Timeline/>
+    </div>
+</div>
+    
+</template>
+<style>
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css";
 </style>
